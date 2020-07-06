@@ -4,7 +4,7 @@ import time
 from ib.ext.Order import Order
 from ib.ext.Contract import Contract
 from ib.opt import Connection, ibConnection, message
-
+ACCOUNT_ID = 'Your IB Account ID'
 class timing:
 	def wait(self, ts):
 		print('Wait to {}...'.format(ts))
@@ -161,7 +161,7 @@ def get_clean_portfolio(tries=20):
 class capital:
 	def __init__(self):
 		self.capital = 0
-		self.account_id = 'DU1804676' # change pls
+		self.account_id = ACCOUNT_ID
 		self.q = queue.Queue()
 		self.timeout = 20
 	def capital_message_handler(self, msg):
