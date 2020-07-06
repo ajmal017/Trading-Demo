@@ -1,0 +1,6 @@
+talib 
+joblib
+iexfinance
+ib-api
+pandas-market-calendars
+tqdm
